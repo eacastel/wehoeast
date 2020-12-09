@@ -1,7 +1,7 @@
 {
   "name": "weho-eastside-neighborhood-watch",
   "author": "Emilio Castellanos",
-  "repository": "https://github.com/eacastel/wehoeast",
+  "repository": "https://github.com/eacastel/wehoeast.git",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
