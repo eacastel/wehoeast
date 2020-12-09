@@ -1,21 +1,32 @@
 import React from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import LogoIcon from '../../svg/LogoIcon';
-import Button from '../Button';
-import LogoImg from  "../../images/wehoeastside-logo-650.gif";
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image";
 
-const Header = () => (
-  <header className="sticky top-0 bg-white shadow">
-     <div className="">
-      <div className="container flex justify-center mx-auto">
-        <div className="w-max">
-            <img src={LogoImg} alt="WEHO Eastside Neighborhood Watch Logo" />
+
+const Header = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <header className="sticky top-0 bg-white shadow">
+      <div className="">
+        <div className="">
+          <div className="md:w-4/5 lg:w-3/5  mx-auto content-center">
+            <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
+          </div>
         </div>
-        
       </div>
+    </header>
 
-    </div>
-  </header>
-);
-
+  )
+}
 export default Header;
