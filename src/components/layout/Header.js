@@ -2,7 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import LogoImg from  "../../images/wehoeastside-logo-650.gif";
+import LogoImg from  "../../images/wehoeastside-logo-650.svg";
 
 const Header = () => (
   <header className="sticky top-0 bg-white shadow">
