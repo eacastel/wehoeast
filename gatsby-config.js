@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 
 module.exports = {
-  pathPrefix: "/wehoeast.git",
+  pathPrefix: "/my_project",
   plugins: [
 
     `gatsby-plugin-react-helmet`,
