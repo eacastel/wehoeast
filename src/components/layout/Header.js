@@ -1,7 +1,6 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import logo from "../../images/wehoeastside-logo-650.png"
 
 
 const Header = () => {
@@ -10,8 +9,8 @@ const Header = () => {
     query {
       wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
         childImageSharp {
-          fluid(maxWidth: 800) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 600) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -22,9 +21,8 @@ const Header = () => {
     <header className="sticky top-0 bg-white shadow">
       <div className="">
         <div className="">
-          <div className="md:w-4/5 lg:w-3/5  mx-auto content-center">
-            <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
-            <img src={logo} />
+          <div className="w-max  mx-auto content-middle">
+            <Img fixed={data.wehoEastImage.childImageSharp.fixed} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
           </div>
         </div>
       </div>
