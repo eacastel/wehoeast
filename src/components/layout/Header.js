@@ -10,7 +10,7 @@ const Header = () => {
       wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
         childImageSharp {
           fluid(maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
