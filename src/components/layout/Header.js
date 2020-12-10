@@ -18,10 +18,10 @@ const Header = () => {
   `)
 
   return (
-    <header className="">
+    <header className="sticky top-0 bg-white shadow">
       <div className="">
         <div className="">
-          <div className="">
+          <div className="w-auto content-center">
             <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
           </div>
         </div>
