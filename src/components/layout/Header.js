@@ -9,8 +9,8 @@ const Header = () => {
     query {
       wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
         childImageSharp {
-          fixed(width: 600) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -21,8 +21,8 @@ const Header = () => {
     <header className="sticky top-0 bg-white shadow">
       <div className="">
         <div className="">
-          <div className="w-max  mx-auto content-middle">
-            <Img fixed={data.wehoEastImage.childImageSharp.fixed} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
+          <div className="w-auto content-center">
+            <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
           </div>
         </div>
       </div>
