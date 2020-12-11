@@ -9,7 +9,7 @@ const Header = () => {
     query {
       wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth:800) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -18,10 +18,10 @@ const Header = () => {
   `)
 
   return (
-    <header className="sticky top-0 bg-white shadow">
+    <header className="sticky top-0 bg-white shadow z-50">
       <div className="">
-        <div className="">
-          <div className="w-auto content-center">
+        <div className="lg:flex lg:justify-center">
+          <div className="lg:w-4/5">
             <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
           </div>
         </div>
