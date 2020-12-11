@@ -20,7 +20,7 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Connections</p>
               <p className="mt-4">
-                Upon joining you will receive a rooster of Neighborhood Watch Captains, City Officials, and Police and Fire representatives along with other important information.
+                Upon joining you will receive a roster of Neighborhood Watch Captains, City Officials, and Police and Fire representatives along with other important information.
               </p>
             </Card>
           </div>
