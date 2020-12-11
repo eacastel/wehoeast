@@ -7,9 +7,9 @@ const Header = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      wehoEastImage: file(relativePath: {eq: "wehoeastside-logo-800.png"}) {
+      wehoEastImage: file(relativePath: {eq: "wehoeastside-logo.png"}) {
         childImageSharp {
-          fluid(maxWidth:800) {
+          fluid(maxWidth:1600) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -21,7 +21,7 @@ const Header = () => {
     <header className="sticky top-0 bg-white shadow z-50">
       <div className="">
         <div className="lg:flex lg:justify-center">
-          <div className="lg:w-4/5">
+          <div className="lg:w-3/4">
             <Img fluid={data.wehoEastImage.childImageSharp.fluid} alt="Weho Eastside Neighborhood Watch Group" className="object-center" />
           </div>
         </div>
