@@ -9,7 +9,7 @@ const sizes = {
 const Button = ({ children, className = '', size }) => {
   return (
     <button
-      type="button"
+      type="submit"
       className={`
         ${sizes[size] || sizes.default}
         ${className}

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer className="container mx-auto py-16 px-3 mt-48 mb-8 text-gray-800">
-    <div className="flex -mx-3">
+    <div className="flex mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">About Us</h2>
         <p className="mt-5">We are a group of neighbors like you who want to make the eastside of West Hollywood as nice or nicer than the westside of West Hollywood! Join us.</p>
