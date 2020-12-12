@@ -1,7 +1,7 @@
-const path = require(`path`)
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+const path = require(`path`)
 
 module.exports = {
   pathPrefix: "/wehoeast",
@@ -30,7 +30,7 @@ module.exports = {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
           endpoint: process.env.MAILCHIMP_ENDPOINT, 
-          timeout: 3500,
+          timeout: 3500
       },
     },
     {
