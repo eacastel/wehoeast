@@ -4,11 +4,27 @@ require("dotenv").config({
 const path = require(`path`)
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://wehoeast.org`,
+    title: "West Hollywood Eastside Neighborhood Watch Group",
+    description:
+      "West Hollywood Eastside Neighborhood Watch Group works to make East West Hollywood safer by working together with the City of West Hollywood and the West Hollywood Sherif's Department to reduce crime and improve the quality of life of our neighborhood.",
+    image: "src/images/wehoeastside-logo-compact.png",
+  },
   pathPrefix: "/wehoeast",
   plugins: [
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://wehoeast.org',
+        sitemap: 'https://wehoeast.org/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
