@@ -8,9 +8,9 @@ import MailChimpFormTwo from '../components/layout/MailChimpFormTwo';
 export default () => (
   <Layout>
     <FeatureOne />
-    <section id="features" className="py-20 lg:pb-40 lg:pt-48">
+    <section id="features" className="py-20 lg:pb-32 lg:pt-28">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">Benefits and Useful Information</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">Benefits Information</h2>
         <div className="flex flex-col md:flex-row md:mx-3 sm:flex-row sm:mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8 ">
@@ -39,7 +39,7 @@ export default () => (
         </div>
       </div>
     </section>
-    <section className="container pl-6 pr-6 mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+    <section className="container pl-6 pr-6 mx-auto py-24 bg-gray-200 rounded-lg text-center">
       <h3 className="text-5xl font-semibold">Let's work together and transform the Eastside into an amazing and safe place to live!</h3>
       <p className="mt-8 text-xl font-light">
         It all starts by signing up to our list below. Keep abreast of important meetings and services, get in touch with your neighborhood watch captains, your city officials, police and fire representatives!

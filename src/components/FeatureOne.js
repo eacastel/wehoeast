@@ -19,7 +19,7 @@ const FeatureOne = () => {
   `)
 
   return (
-    <section className="pt-20 md:pt-40">
+    <section className="pt-16 md:pt-32">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
