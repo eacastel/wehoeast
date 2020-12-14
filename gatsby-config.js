@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
@@ -70,13 +71,5 @@ module.exports = {
         cache_busting_mode: 'none'
       }
    },
-   {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-         workboxConfig: {
-            globPatterns: ['**/icon-path*']
-         }
-      }
-   }
   ],
 };
