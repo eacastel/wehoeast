@@ -9,7 +9,7 @@ module.exports = {
     title: "West Hollywood Eastside Neighborhood Watch Group",
     description:
       "West Hollywood Eastside Neighborhood Watch Group works to make East West Hollywood safer by working together with the City of West Hollywood and the West Hollywood Sherif's Department to reduce crime and improve the quality of life of our neighborhood.",
-    image: "src/images/wehoeastside-logo-compact.png",
+    image: "/src/images/wehoeastside-logo-compact.png",
   },
   pathPrefix: "/wehoeast",
   plugins: [
@@ -55,5 +55,28 @@ module.exports = {
         tailwindConfig: `tailwind.config.js`
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: `West Hollywood Eastside Neighborhood Watch`,
+        short_name: `Weho Eastside Neighborhood Watch`,
+        description: `Stay connected with your neighborhood captains and make a difference in your neighborhood by getting involved.`,
+        lang: `en`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        cache_busting_mode: 'none'
+      }
+   },
+   {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: ['src/images/icon.png']
+         }
+      }
+   }
   ],
 };

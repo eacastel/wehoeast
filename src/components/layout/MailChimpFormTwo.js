@@ -44,24 +44,27 @@ export default class MailChimpFormTwo extends React.Component {
                     <input
                         type="email"
                         onChange={this._handleChange}
-                        placeholder="enter-your@email.com"
                         name="email"
-                        className="border-grey-400 border-2 rounded-lg p-4 mt-1 block w-3/5 shadow-sm"
+                        className=" block w-3/5 border-grey-500 border-2 rounded-lg h-16 text-center shadow-sm pl-3 pt-4"
                         autoComplete="email"
                     />
+                    <label htmlFor="email" className="absolute ml-2 text-left  text-gray-500 mt-2">Email Address:</label>
                  </div>
            
-                    <br />
-                    <input type="submit" className="               
-                        bg-tmagenta
-                        hover:bg-tyellow
-                        rounded
-                        text-white
-                        font-medium
-                        py-3 px-8
-                        lg:py-4 lg:px-12
-                        xl:py-5 xl:px-16 xl:text-lg"
-                        />
+                    <div className="pt-5">
+                        <input type="submit" className="
+                            cursor-pointer               
+                            bg-tmagenta
+                            hover:bg-tyellow
+                            rounded
+                            text-white
+                            hover:text-black
+                            font-medium
+                            py-3 px-8
+                            lg:py-4 lg:px-12
+                            xl:py-5 xl:px-16 xl:text-lg"
+                            />
+                    </div>
                 </form>
             </div>
         )

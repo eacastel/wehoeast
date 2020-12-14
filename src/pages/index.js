@@ -8,7 +8,7 @@ import MailChimpFormTwo from '../components/layout/MailChimpFormTwo';
 export default () => (
   <Layout>
     <FeatureOne />
-    <section id="features" className="py-20 lg:pb-32 lg:pt-28">
+    <section id="features" className="py-20 lg:pb-28 lg:pt-28">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Benefits Information</h2>
         <div className="flex flex-col md:flex-row md:mx-3 sm:flex-row sm:mx-3 mt-12">
