@@ -23,7 +23,7 @@ const Header = () => {
   `);
 
   return (
-    <header className="sticky top-0 bg-white shadow-lg z-50 pt-2 pb-4">
+    <header className="md:sticky md:top-0 bg-white shadow-lg z-50 pt-2 pb-4">
       <div className="">
         <div className="lg:flex lg:justify-center">
           <div className="lg:w-3/4">
