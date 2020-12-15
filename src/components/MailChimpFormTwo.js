@@ -1,5 +1,5 @@
-import addToMailchimp from "gatsby-plugin-mailchimp"
-import React from "react"
+import addToMailchimp from 'gatsby-plugin-mailchimp'
+import React from 'react'
 
 
 export default class MailChimpFormTwo extends React.Component {

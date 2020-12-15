@@ -5,7 +5,10 @@ const Footer = () => (
     <div className="flex mx-3 text-center">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">We are a group of neighbors like you who want to make the eastside of West Hollywood as nice or nicer than the westside of West Hollywood! Join us.</p>
+        <p className="mt-5">
+          We are a group of neighbors like you who want to make the eastside of West Hollywood as
+          nice or nicer than the westside of West Hollywood! Join us.
+        </p>
       </div>
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Important Links</h2>
@@ -17,7 +20,9 @@ const Footer = () => (
             <a href="https://athensservices.com/order-special-services/request-services/">Bulky Item Pick-Up (Athens Trash Removal)</a>
           </li>
           <li className="pb-3">
-            <a href="https://www.weho.org/city-government/city-departments/facilities-and-recreation-services/facilities-and-field-services/graffiti-removal">Graffiti Removal</a>
+            <a href="https://www.weho.org/city-government/city-departments/facilities-and-recreation-services/facilities-and-field-services/graffiti-removal">
+              Graffiti Removal
+            </a>
           </li>
           <li>
             <a href="https://wehosheriff.com/#contact">West Hollywood Sheriff Department</a>

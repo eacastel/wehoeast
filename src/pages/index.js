@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../components/Button';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import FeatureOne from '../components/FeatureOne';
@@ -16,7 +15,9 @@ export default () => (
             <Card className="mb-8 ">
               <p className="font-semibold text-xl">Leverage</p>
               <p className="mt-4">
-                Upon joining you will receive a roster of Neighborhood Watch Captains, City Officials, and Police and Fire representatives along with other important information.
+                Upon joining you will receive a roster of Neighborhood Watch Captains, City
+                Officials, and Police and Fire representatives along with other important
+                information.
               </p>
             </Card>
           </div>
@@ -24,7 +25,8 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Useful Tips</p>
               <p className="mt-4">
-              You will also get useful tips for trash removal, reporting suspicious activity in your area, safety tips and timely information about city guidelines and updates.
+                You will also get useful tips for trash removal, reporting suspicious activity in
+                your area, safety tips and timely information about city guidelines and updates.
               </p>
             </Card>
           </div>
@@ -32,7 +34,8 @@ export default () => (
             <Card className="mb-8">
               <p className="font-semibold text-xl">Events and Parties!</p>
               <p className="mt-4">
-              Get invited to attend our Neighborhood Watch Meetings, Grand Openings for new businesses in the area, and special parties such as our yearly Block Party!
+                Get invited to attend our Neighborhood Watch Meetings, Grand Openings for new
+                businesses in the area, and special parties such as our yearly Block Party!
               </p>
             </Card>
           </div>
@@ -40,15 +43,17 @@ export default () => (
       </div>
     </section>
     <section className="container pl-6 pr-6 mx-auto py-24 bg-gray-200 rounded-lg text-center">
-      <h3 className="text-5xl font-semibold">Let's work together and transform the Eastside into an amazing and safe place to live!</h3>
+      <h3 className="text-5xl font-semibold">
+        Let's work together and transform the Eastside into an amazing and safe place to live!
+      </h3>
       <p className="mt-8 text-xl font-light">
-        It all starts by signing up to our list below. Keep abreast of important meetings and services, get in touch with your neighborhood watch captains, your city officials, police and fire representatives!
+        It all starts by signing up to our list below. Keep abreast of important meetings and
+        services, get in touch with your neighborhood watch captains, your city officials, police
+        and fire representatives!
       </p>
       <div className="mt-8">
-      <MailChimpFormTwo />
+        <MailChimpFormTwo />
       </div>
     </section>
   </Layout>
 );
-
-
