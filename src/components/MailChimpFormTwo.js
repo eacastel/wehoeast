@@ -47,6 +47,7 @@ export default class MailChimpFormTwo extends React.Component {
                         name="email"
                         className=" block w-3/5 border-grey-500 border-2 rounded-lg h-16 text-center shadow-sm pl-3 pt-4"
                         autoComplete="email"
+                        id="email"
                     />
                     <label htmlFor="email" className="absolute ml-2 text-left  text-gray-500 mt-2">Email Address:</label>
                  </div>
