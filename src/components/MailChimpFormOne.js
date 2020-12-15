@@ -41,7 +41,9 @@ export default class MailChimpFormTwo extends React.Component {
             <div>
                 <form onSubmit={this._handleSubmit}>
                 <div className="flex justify-center lg:justify-start mt-8 w-auto">
-                    
+                    <label for="email" className="absolute ml-2 text-left  text-gray-500 mt-2">
+                    Email Address:
+                    </label>
                     <input
                         type="email"
                         onChange={this._handleChange}
@@ -50,7 +52,7 @@ export default class MailChimpFormTwo extends React.Component {
                         autoComplete="email"
                         id="email"
                     />
-                        <label for="email" className="absolute ml-2 text-left  text-gray-500 mt-2">Email Address:</label>
+                        
 
                                         
                     
