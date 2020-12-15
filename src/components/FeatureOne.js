@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
-import MailChimpFormOne from '../components/layout/MailChimpFormOne';
+import MailChimpFormOne from './MailChimpFormOne';
 
 
 const FeatureOne = () => {
