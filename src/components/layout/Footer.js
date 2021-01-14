@@ -51,7 +51,7 @@ const Footer = () => (
             <ExternalLink to="https://www.facebook.com/groups/wehoeast/">Facebook</ExternalLink>
           </li>
           <li className="pb-3">
-            <Link to="mailto:info@wehoeast.org">Email</Link>
+            <a href="mailto:info@wehoeast.org">Email</a>
           </li>
         </ul>
       </div>
