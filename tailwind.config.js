@@ -1,4 +1,6 @@
 module.exports = {
+  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -7,6 +9,7 @@ module.exports = {
         'tyellow': '#fff200',
         'tdblue': '#23408f',
         'tblack': '#0d0d0d',
+        'tlinkblue': 'hsl(207deg 74% 32%)',
 
         primary: {
           lighter: 'hsl(207, 73%, 52%)',
