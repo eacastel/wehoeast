@@ -60,7 +60,7 @@ export default class MailChimpFormTwo extends React.Component {
                  </div>
            
                     <div className="mt-5">
-                        <input type="submit" className="
+                        <input type="submit" value="Submit" className="
                             cursor-pointer             
                             bg-tmagenta
                             hover:bg-tyellow
