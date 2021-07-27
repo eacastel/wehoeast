@@ -64,7 +64,7 @@ const NNO = () => {
       }
       ibiza: file(relativePath: { eq: "ibiza-nails.png" }) {
         childImageSharp {
-          fixed(width: 150) {
+          fixed(width: 130) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -76,9 +76,37 @@ const NNO = () => {
           }
         }
       }
+      neimanmarcus: file(relativePath: { eq: "neiman-marcus.png" }) {
+        childImageSharp {
+          fixed(width: 160) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       pleasure: file(relativePath: { eq: "pleasure-chest.png" }) {
         childImageSharp {
           fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      ritmo: file(relativePath: { eq: "ritmo-mundo.png" }) {
+        childImageSharp {
+          fixed(width: 175) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      taschen: file(relativePath: { eq: "taschen.png" }) {
+        childImageSharp {
+          fixed(width: 150) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      trader: file(relativePath: { eq: "trader-joes.png" }) {
+        childImageSharp {
+          fixed(width: 185) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -162,7 +190,7 @@ const NNO = () => {
             <Link to="https://www.weho.org/city-government/emergency-information">click here</Link>.
           </div>
 
-          <div className=" border-tmagenta border-2 rounded-lg mx-auto w-full flex flex-wrap justify-center mt-6">
+          <div className=" border-tmagenta border-2 rounded-lg mx-auto w-full flex flex-wrap justify-center m-6 pb-6">
             <p className="text-2xl text-tmagenta mx-auto font-bold w-full mb-8 ">EVENT SPONSORS:</p>
             <div className="m-4 self-center">
               <Img
@@ -216,25 +244,77 @@ const NNO = () => {
               />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.block.childImageSharp.fixed} alt="3" className="object-center" />
+              <Img
+                fixed={data.block.childImageSharp.fixed}
+                alt="Block Party"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.breakfast.childImageSharp.fixed} alt="4" className="object-center" />
+              <Img
+                fixed={data.breakfast.childImageSharp.fixed}
+                alt="Breakfast Republic"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.dog.childImageSharp.fixed} alt="5" className="object-center" />
+              <Img
+                fixed={data.dog.childImageSharp.fixed}
+                alt="City Dog"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.francisco.childImageSharp.fixed} alt="6" className="object-center" />
+              <Img
+                fixed={data.francisco.childImageSharp.fixed}
+                alt="Francisco Coffee"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.ibiza.childImageSharp.fixed} alt="7" className="object-center" />
+              <Img
+                fixed={data.ibiza.childImageSharp.fixed}
+                alt="Ibiza Nails"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
-              <Img fixed={data.dogs.childImageSharp.fixed} alt="8" className="object-center" />
+              <Img
+                fixed={data.dogs.childImageSharp.fixed}
+                alt="Food For Dogs"
+                className="object-center"
+              />
+            </div>
+            <div className="m-4 self-center">
+              <Img
+                fixed={data.neimanmarcus.childImageSharp.fixed}
+                alt="Neiman Marcus"
+                className="object-center"
+              />
             </div>
             <div className="m-4 self-center">
               <Img fixed={data.pleasure.childImageSharp.fixed} alt="9" className="object-center" />
+            </div>
+            <div className="m-4 self-center">
+              <Img
+                fixed={data.ritmo.childImageSharp.fixed}
+                alt="Ritmo Mundo"
+                className="object-center"
+              />
+            </div>
+            <div className="m-4 self-center">
+              <Img
+                fixed={data.taschen.childImageSharp.fixed}
+                alt="Taschen"
+                className="object-center"
+              />
+            </div>
+            <div className="m-4 self-center">
+              <Img
+                fixed={data.trader.childImageSharp.fixed}
+                alt="Trader Joes"
+                className="object-center"
+              />
             </div>
           </div>
         </div>
