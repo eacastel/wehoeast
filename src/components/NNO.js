@@ -139,6 +139,20 @@ const NNO = () => {
           }
         }
       }
+      aka: file(relativePath: { eq: "aka-logo.png" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      bird: file(relativePath: { eq: "bird-logo.png" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       nela: file(relativePath: { eq: "nela-development.png" }) {
         childImageSharp {
           fixed(width: 125) {
@@ -192,6 +206,13 @@ const NNO = () => {
 
           <div className=" border-tmagenta border-2 rounded-lg mx-auto w-full flex flex-wrap justify-center m-6 pb-6">
             <p className="text-2xl text-tmagenta mx-auto font-bold w-full mb-8 ">EVENT SPONSORS:</p>
+            <div className="m-4 px-4 self-center">
+              <Img
+                fixed={data.aka.childImageSharp.fixed}
+                alt="Sponsor AKA"
+                className="object-center"
+              />
+            </div>
             <div className="m-4 self-center">
               <Img
                 fixed={data.aura.childImageSharp.fixed}
@@ -216,7 +237,7 @@ const NNO = () => {
                 className="object-center"
               />
             </div>
-            <div className="m-4 self-center">
+            <div className="m-4 px-4 self-center">
               <Img
                 fixed={data.nela.childImageSharp.fixed}
                 alt="Nela Development"
@@ -240,6 +261,13 @@ const NNO = () => {
               <Img
                 fixed={data.astro.childImageSharp.fixed}
                 alt="Astro Burger Sponsor Logo"
+                className="object-center"
+              />
+            </div>
+            <div className="m-4 px-4 self-center">
+              <Img
+                fixed={data.bird.childImageSharp.fixed}
+                alt="Sponsor Bird"
                 className="object-center"
               />
             </div>
