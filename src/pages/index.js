@@ -2,12 +2,10 @@ import React from 'react';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import FeatureOne from '../components/FeatureOne';
-import NNO from '../components/NNO';
 import MailChimpFormTwo from '../components/MailChimpFormTwo';
 
 export default () => (
   <Layout>
-    <NNO />
     <FeatureOne />
     <section id="features" className="py-16 lg:pb-28 lg:pt-28">
       <div className="container mx-auto text-center">
