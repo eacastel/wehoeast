@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../components/Card';
 import Layout from '../components/layout/Layout';
 import FeatureOne from '../components/FeatureOne';
-import MailChimpFormTwo from '../components/MailChimpFormTwo';
+import MailerLiteForm from '../components/MailerLiteForm';
 
 export default () => (
   <Layout>
@@ -52,7 +52,7 @@ export default () => (
         and fire representatives!
       </p>
       <div className="mt-8">
-        <MailChimpFormTwo />
+        <MailerLiteForm />
       </div>
     </section>
   </Layout>

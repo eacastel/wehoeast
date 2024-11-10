@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import MailChimpFormOne from './MailChimpFormOne';
+import MailerLiteForm from '../components/MailerLiteForm';
 
 const FeatureOne = () => {
   const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const FeatureOne = () => {
             heard.
           </p>
 
-          <MailChimpFormOne />
+          <MailerLiteForm />
 
           <p className="mt-4 text-gray-600 pb-8">
             Enter your email to receive meeting invitations, special event reminders, and other
