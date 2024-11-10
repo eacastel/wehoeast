@@ -52,7 +52,7 @@ export default () => (
         and fire representatives!
       </p>
       <div className="mt-8">
-        
+      <MailerLiteForm />
       </div>
     </section>
   </Layout>
