@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 const MailerLiteForm = () => {
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.ml) {
-      window.ml('form', 'show', 'nv0V6l');
+    if (typeof window !== 'undefined') {
+      // Browser-specific code here
     }
   }, []);
 
