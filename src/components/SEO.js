@@ -20,27 +20,23 @@ const SEO = ({ title, description, image }) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
-      <script type="text/javascript">
-        {`
-            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-            ml('account', '1169930');
-          `}
-      </script>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       <meta http-equiv="content-language" content="en-us" />
-
       {seo.url && <meta property="og:url" content={seo.url} />}
-
       {seo.title && <meta property="og:title" content={seo.title} />}
-
       {seo.description && <meta property="og:description" content={seo.description} />}
-
       {seo.image && <meta property="og:image" content={seo.image} />}
       <html lang="en" />
+      <script type="text/javascript">
+        {`
+            (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1169930');
+          `}
+      </script>
     </Helmet>
   );
 };
